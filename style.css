@@ -22,7 +22,7 @@ nav {
   padding: 2em 15%; 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: rgba(15,15,15,0.8);
   backdrop-filter: blur(10px);
   z-index: 1000px;
@@ -36,6 +36,7 @@ nav ul a{
   color: white;
   opacity: .7;
   transition: 0.2s ease-in-out;
+  font-size: 1.5em;
 }
 nav ul a:hover{
   opacity: 1;
@@ -138,7 +139,7 @@ section{
   gap: 5em;
 }
 #about img{
-  width:30vw;
+  width:18vw;
   border-radius: 1em;
 }
 .about-box{
