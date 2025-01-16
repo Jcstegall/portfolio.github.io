@@ -16,7 +16,7 @@ body {
   background-color: var(--background);
 }
 nav {
-  position: fixed;
+  position: static;
   top : 0;
   width: 100%;
   padding: 2em 15%; 
@@ -66,7 +66,7 @@ nav ul a:hover{
   color: var(--background);
 }
 span{
-  background:linear-gradient(to right, #6cff52, #3ec5ff);
+  background:linear-gradient(to right, #b342f5, #3904b5);
   background-clip: text;
   color: transparent;
 }
@@ -128,7 +128,7 @@ section{
   background-color: var(--background);
 }
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+  background: linear-gradient(to bottom, #b342f5, #3904b5);
 }
 #about{
   background-color: var(--second-background);
@@ -273,6 +273,7 @@ footer{
   display: flex;
   align-items: center;
   gap: 1em;
+  color: white;
 }
 .col-box i{
   font-size: 2em;
@@ -295,6 +296,7 @@ footer{
   align-items: baseline;
   justify-content: left;
   gap: 1em;
+  
 }
 .col-right .social-icons{
   font-size: 2em;
@@ -304,8 +306,17 @@ footer{
 .social-icons i:hover{
   color: white;
 }
+.social-icons a {
+  text-decoration: none;
+  color: inherit; /* Keeps the icon color same as its parent */
+}
 
-@media(max-width: 968px){
+.social-icons a:hover {
+  color: white; /* Changes the icon color on hover */
+}
+
+
+@media(max-width: 987px){
   section{
     padding: 8em 15%;
   }
