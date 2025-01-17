@@ -16,7 +16,7 @@ body {
   background-color: var(--background);
 }
 nav {
-  position: static;
+  position: fixed;
   top : 0;
   width: 100%;
   padding: 2em 15%; 
@@ -25,7 +25,7 @@ nav {
   justify-content: space-evenly;
   background-color: rgba(15,15,15,0.8);
   backdrop-filter: blur(10px);
-  z-index: 1000px;
+  z-index: 1000;
 }
 ul {
   display: flex;
@@ -88,6 +88,9 @@ section{
   gap: 2em;
   color: white;
 }
+#home p{
+  font-size: 1.2em;
+}
 #home img{
   width: 18vw;
   border-radius: 50%;
@@ -115,14 +118,6 @@ section{
 .btn-box{
   display: flex;
   gap: 1em;
-}
-.btn-box .btn:nth-of-type(2){
-  background-color: white;
-  color: var(--background);
-}
-.btn-box .btn:nth-of-type(2):hover{
-  background-color: white;
-  color: var(--background);
 }
 ::-webkit-scrollbar{
   width: 20px;
@@ -154,6 +149,7 @@ section{
 .about-box p{
   color:white;
   opacity: .8;
+  font-size: 1.3em;
 }
 .skills{
   display:flex;
