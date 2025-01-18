@@ -92,10 +92,9 @@ section{
   font-size: 1.2em;
 }
 #home img{
-  width: 18vw;
-  border-radius: 50%;
   margin-top: 3em;
-
+  width: 300px;
+  border-radius:.5em;
 }
 .info-box{
   display: flex;
@@ -133,14 +132,10 @@ section{
   justify-content: center;
   gap: 5em;
 }
-#about img{
-  width:18vw;
-  border-radius: 1em;
-}
 .about-box{
   display:flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   gap: 2em;
 }
 .about-box h1{
@@ -151,19 +146,21 @@ section{
   opacity: .8;
   font-size: 1.3em;
 }
+
 .skills{
   display:flex;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
   gap: 10em;
 }
 .skills ul{
   font-size: 1.3em;
   font-weight: 500;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
   opacity: .8;
-  align-items: baseline;
+  align-items: center;
 }
 .skills ul li span{
   display: flex;
